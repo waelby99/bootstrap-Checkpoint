@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <title>Courses</title>
+    <style>
+        .ff
+        {
+            width:100%;
+            height:250px;
+            display: inline-block;
+
+        }
+        .ph1
+        {
+            width:250px;
+            height:250px;
+            display: inline-block;
+            background-image: url('bb.jpg');
+            margin-left: 100px;
+        }
+        .ph2
+        {
+            width:250px;
+            height:250px;
+            display: inline-block;
+            background-image: url('bb1.jpg');
+            margin-left: 100px;
+        }
+        .ph3
+        {
+            width:250px;
+            height:250px;
+            display: inline-block;
+            background-image: url('bb2.jpg');
+            margin-left: 100px;
+        }
+        .ph1:hover{
+          opacity: 0.5;
+        }
+        .ph2:hover{
+          opacity: 0.5;
+        }
+        .ph3:hover{
+          opacity: 0.5;
+        }
+      .j{
+        position: fixed;
+        top:475px;
+        left:320px;
+        display: none;
+      }
+      .j1{
+        display: none;
+        position: fixed;
+        top:475px;
+        left:690px;
+      }
+      .j2{
+        position: fixed;
+        top:475px;
+        left:1040px;
+        display: none;
+      }
+    </style>
+    
+</head>
+<body>
+  <script>
+    $(document).ready(function(){
+    $(".ph1").mouseenter(function(){
+        $(".j").show();
+      });
+      $(".ph1").mouseleave(function(){
+        $(".j").hide();
+      });        
+});
+$(document).ready(function(){
+      $(".ph2").mouseenter(function(){
+        $(".j1").show();
+      });
+      $(".ph2").mouseleave(function(){
+        $(".j1").hide();
+      });        
+});
+$(document).ready(function(){
+  $(".ph3").mouseenter(function(){
+        $(".j2").show();
+      });
+      $(".ph3").mouseleave(function(){
+        $(".j2").hide();
+      });        
+});
+    </script>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="courses.html">Courses</a>
+        <a class="nav-item nav-link" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <h1 class="b" style="text-align: center;margin-top: 200px;">Our Courses </h1><br><br>
+  <center>
+  <div class="ff">
+        <div class="ph1"><a href="#ex1" rel="modal:open"><button class="j">View More</button></a></div>
+        <div class="ph2"><a href="#ex1" rel="modal:open"><button class="j1">View More</button></a></div>
+        <div class="ph3"><a href="#ex1" rel="modal:open"><button class="j2">View More</button></a></div>
+    </div>
+  </center>
+  <div style="width:500px;height: 150px;" id="ex1" class="modal">
+    <p>This is a GoMyCode Track. <br>
+      Each track has its own goal. <br>
+      By adopting this track, you chose your own goal.</p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+    </body>
+  </html>
